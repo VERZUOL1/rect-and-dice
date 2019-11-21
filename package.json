@@ -1,0 +1,24 @@
+{
+  "name": "rectangles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "start": "node dices.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VERZUOL1/rect-and-dice.git"
+  },
+  "keywords": [],
+  "author": "Oleg Verzunov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VERZUOL1/rect-and-dice/issues"
+  },
+  "homepage": "https://github.com/VERZUOL1/rect-and-dice#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
