@@ -4,7 +4,7 @@
  * - x2, y2 - bottom right coordinates
  */
 function isIntersect(rectA, rectB) {
-  // Helper function to prepare incoming object
+  // Helper function to validate incoming object
   function validateRect(shape) {
     // Validate incoming objects
     const mandatoryProps = ['x1', 'x2', 'y1', 'y2'];
