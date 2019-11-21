@@ -33,11 +33,12 @@ describe('Is intersect', () => {
     expect(log).toHaveBeenCalledWith('Provided rect doesn\'t have required params');
   });
 
-  test('it should return true if provided rects has negative coordinates and they are intersecting', () => {
+  test('it should return falseand display an error in console if provided rects has negative coordinates', () => {
     const a = { x1: -2, y1: 2, x2: 2, y2: -1 };
     const b = { x1: 1, y1: 1, x2: 5, y2: -2 };
     const result = isIntersect(a, b);
 
-    expect(result).toBe(true);
+    expect(result).toBe(false);
+    expect(log).toHaveBeenCalledWith('Provided rect coordinates must be positive');
   });
 });
